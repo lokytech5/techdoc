@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Techdoc Application
+
+![HomePage](public/images/Screenshot1.png)
+![](public/images/Screenshot2.png)
+![Project-Page](public/images/Screenshot3.png)
+![Guide-Creation-Page](public/images/Screenshot4.png)
+![Generated-Guide-Page](public/images/Screenshot5.png)
+![Code-Analysis-Page](public/images/Screenshot6.png)
+![Code-Analysis-In-Action](public/images/Screenshot7.png)
+
+Welcome to the **Techdoc-Application** documentation application repository. This application is designed for generating technical documentation based on a particular project, utilizing a modern tech stack comprising Next.js with TypeScript for the frontend, Typescript for the backend with Chatgpt-4 intergated for the generation of documentation. We leverage MongoDB for data persistence, ensuring a robust and scalable solution.
+
+## Features
+
+- **User Registration and Profile Management**: Users can register and maintain their profiles.
+- **Project Management**: Users can add projects, view projects and delete projects.
+- **Guide Creation**: Once Project is Added, Users can generate a documnetation guide for their projects
+- **Code Analysis**: Users can use our advance AI to analysis their code based and know where their making mistake
+
+## Technology Stack
+
+- **Frontend**: Next.js, TypeScript
+- **Backend**: Typescript, Prsima, Chat-gpt4
+- **Database**: MongoDB
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
+   ``git clone https://github.com/lokytech5/techdoc.git``
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
+   ``cd techdoc``
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install the dependencies:
+   ``npm install``
 
-## Learn More
+## Configuration
 
-To learn more about Next.js, take a look at the following resources:
+Create a .env file in the root directory and add the following configurations:
+``NEXT_PUBLIC_BASE_UR=<url to backend>``
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running The Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Run the application in development model**:
+  ``npm run dev``
 
-## Deploy on Vercel
+## Build the application for production:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+``npm run build ``
+``npm start``
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions to the Techdoc project are welcome. Please refer to the CONTRIBUTING.md file for guidelines.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
